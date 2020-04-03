@@ -2,7 +2,7 @@
 
 .PHONY: all debug release clean
 
-all: debug release
+all: debug release clean
 
 debug: hello-dbg
 
@@ -15,5 +15,5 @@ hello: hello.cpp
 	g++ -O2 hello.cpp -o hello -DNDEBUG -Wall
 
 clean:
-	rm -f hello 
+	rm -f hello-dbg 
 
