@@ -9,7 +9,7 @@ DEBUG_EXEC    = Kazino-Royal-dbg
 INPUT_FILE	  = Kazino-Royal.cpp
 #SOURCE        =
 
-all: debug release
+all: debug release clean
 
 debug: $(DEBUG_EXEC)
 
@@ -22,5 +22,5 @@ Kazino-Royal: $(INPUT_FILE)
 	g++ $(RELEASE_FLAGS) $(INPUT_FILE) -o $(RELEASE_EXEC)
 
 clean:
-	rm -f $(RELEASE_EXEC) $(DEBUG_EXEC)
+	rm -f $(DEBUG_EXEC)
 
